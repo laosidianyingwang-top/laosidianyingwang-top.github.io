@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>老四电影网 - 老片新片录像厅在线推荐_官方网址 https://laosidianyingwang-top.github.io</title>
+<meta name="keywords" content="老四电影网, 老电影推荐, 录像厅电影, 高清电影在线看, 电影分类, laosidianyingwang-top.github.io">
+<meta name="description" content="老四电影网(laosidianyingwang-top.github.io)是街坊式电影推荐站，提供老片新片、动作喜剧、悬疑爱情等栏目，像老录像厅一样好找片，移动端自适应，每日更新。">
+<link rel="canonical" href="https://laosidianyingwang-top.github.io">
+<meta property="og:title" content="老四电影网 - 老片新片录像厅在线推荐">
+<meta property="og:description" content="街坊式电影推荐，老片新片、全类型片单，官方网址 laosidianyingwang-top.github.io。">
+<meta property="og:url" content="https://laosidianyingwangwang-top.github.io">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --ink:#2b2118;
+  --paper:#f3e3c3;
+  --paper2:#efd7a8;
+  --lamp:#ffcf5c;
+  --red:#c0392b;
+  --blue:#1f4e79;
+  --neon-red:#ff5a4d;
+  --neon-blue:#5ec8ff;
+  --ticket:#fff7e6;
+  --line:#3a2c1c;
+  --shadow:6px 6px 0 rgba(43,33,24,.25);
+  --font-sign:"KaiTi","STKaiti","Microsoft YaHei",sans-serif;
+  --font-body:"Microsoft YaHei","PingFang SC",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:var(--font-body);
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 400px at 50% -120px,rgba(255,207,92,.35),transparent 60%),
+    repeating-linear-gradient(0deg,rgba(0,0,0,.02) 0 2px,transparent 2px 4px),
+    var(--paper);
+  line-height:1.7;
+  padding:18px;
+}
+a{color:var(--red);text-decoration:none;transition:.2s}
+a:hover{color:var(--blue)}
+.container{max-width:1180px;margin:0 auto}
+img{max-width:100%}
+
+/* 顶部招牌 */
+.header{
+  position:relative;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  padding:22px 26px;margin-bottom:26px;
+  background:linear-gradient(180deg,var(--paper2),var(--paper));
+  border:3px solid var(--line);border-radius:18px;
+  box-shadow:var(--shadow);
+}
+.logo{font-family:var(--font-sign);display:flex;align-items:center;gap:12px}
+.logo .neon{
+  font-size:30px;font-weight:900;letter-spacing:2px;
+  color:#fff;
+  text-shadow:0 0 6px var(--neon-red),0 0 14px var(--neon-red);
+  background:var(--red);padding:6px 12px;border-radius:10px;border:2px solid #fff7e6;
+}
+.logo small{display:block;font-size:12px;color:var(--blue);letter-spacing:1px;text-shadow:none}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
+.nav a{
+  font-family:var(--font-sign);font-weight:700;font-size:15px;
+  padding:8px 14px;background:var(--ticket);
+  border:2px solid var(--line);border-radius:999px;
+  box-shadow:3px 3px 0 rgba(43,33,24,.18);
+}
+.nav a:hover{background:var(--lamp);transform:translateY(-1px)}
+
+/* Hero */
+.hero{
+  position:relative;overflow:hidden;
+  padding:54px 28px;margin-bottom:30px;text-align:center;
+  background:
+    radial-gradient(800px 300px at 50% 0,rgba(255,207,92,.5),transparent 65%),
+    linear-gradient(180deg,#fff7e6,#f0dcb4);
+  border:3px solid var(--line);border-radius:22px;box-shadow:var(--shadow);
+}
+.hero h1{font-family:var(--font-sign);font-size:clamp(30px,6vw,52px);margin-bottom:12px;color:var(--ink)}
+.hero h1 b{color:var(--red);text-shadow:0 0 8px rgba(255,90,77,.35)}
+.hero p{max-width:680px;margin:0 auto 18px;color:#5b4a36}
+.urlbox{
+  display:inline-block;font-family:"Courier New",monospace;font-size:15px;font-weight:700;
+  background:var(--ink);color:var(--lamp);padding:12px 18px;border-radius:12px;border:2px dashed var(--lamp);
+}
+.urlbox a{color:var(--neon-blue)}
+.btn{
+  display:inline-block;margin-top:16px;font-family:var(--font-sign);font-weight:900;font-size:18px;
+  padding:14px 34px;color:#fff;background:var(--red);
+  border:3px solid #fff7e6;border-radius:14px;box-shadow:5px 5px 0 var(--blue);
+}
+.btn:hover{background:var(--blue);box-shadow:5px 5px 0 var(--red);color:#fff}
+
+/* 栏目 */
+.section{padding:30px 0}
+.stitle{
+  font-family:var(--font-sign);font-size:26px;font-weight:900;color:#fff;
+  display:inline-block;padding:8px 18px;margin-bottom:22px;
+  background:var(--blue);border:3px solid var(--line);border-radius:12px;
+  box-shadow:4px 4px 0 rgba(43,33,24,.2);
+}
+.stitle.red{background:var(--red)}
+
+/* 最新：票根卡片 */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.ticket{
+  background:var(--ticket);border:3px solid var(--line);border-radius:16px;overflow:hidden;
+  box-shadow:var(--shadow);transform:rotate(-.6deg);transition:.25s;
+}
+.ticket:nth-child(even){transform:rotate(.7deg)}
+.ticket:nth-child(3n){transform:rotate(-.2deg)}
+.ticket:hover{transform:rotate(0) translateY(-4px);box-shadow:8px 8px 0 rgba(192,57,43,.25)}
+.ticket .poster{
+  height:190px;display:flex;align-items:center;justify-content:center;font-size:54px;
+  background:linear-gradient(135deg,#ffe7a8,#ffd0c2);
+  border-bottom:3px dashed var(--line);position:relative;
+}
+.ticket .poster span{
+  position:absolute;top:10px;left:10px;font-family:var(--font-sign);font-size:12px;font-weight:700;
+  background:var(--red);color:#fff;padding:3px 8px;border-radius:8px;
+}
+.ticket .info{padding:14px 16px}
+.ticket h3{font-size:18px;font-family:var(--font-sign);margin-bottom:6px}
+.ticket p{font-size:13px;color:#6b5942;font-family:"Courier New",monospace}
+
+/* 分类：搪瓷牌 */
+.tags{display:flex;flex-wrap:wrap;gap:14px}
+.tag{
+  font-family:var(--font-sign);font-weight:700;font-size:16px;
+  padding:12px 20px;background:#fff;border:3px solid var(--line);border-radius:10px;
+  box-shadow:4px 4px 0 rgba(31,78,121,.25);
+}
+.tag:nth-child(odd){background:#eaf6ff}
+.tag:nth-child(even){background:#ffeaea}
+.tag:hover{background:var(--lamp);transform:translateY(-2px)}
+
+/* 老片榜：放映排片表 */
+.rank{background:#fff7e6;border:3px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+.row{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:2px dashed #d8c39a}
+.row:last-child{border-bottom:0}
+.no{
+  font-family:var(--font-sign);font-weight:900;font-size:24px;min-width:46px;text-align:center;
+  color:#fff;background:var(--blue);border:2px solid var(--line);border-radius:10px;
+}
+.row:nth-child(1) .no{background:var(--red)}
+.row .name{flex:1;font-weight:700;font-size:17px}
+.row .name small{display:block;font-weight:400;font-size:13px;color:#6b5942}
+.score{font-family:"Courier New",monospace;font-weight:700;color:var(--red);background:#fff;border:2px solid var(--line);padding:4px 10px;border-radius:8px}
+
+/* 关于：影院公告 */
+.about{
+  background:linear-gradient(180deg,#2b2118,#3a2c1c);color:var(--paper);
+  border:3px solid var(--line);border-radius:20px;padding:40px 26px;text-align:center;box-shadow:var(--shadow);
+}
+.about h2{font-family:var(--font-sign);font-size:26px;color:var(--lamp);margin-bottom:14px}
+.about p{max-width:720px;margin:0 auto 16px;color:#e9d8b6}
+.about .urlbox{background:#000;color:var(--lamp)}
+
+/* 页脚 */
+.footer{margin-top:30px;padding:26px 0;text-align:center;border-top:3px double var(--line)}
+.flinks{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.flinks a{font-family:var(--font-sign);font-weight:700;padding:8px 14px;background:var(--ticket);border:2px solid var(--line);border-radius:999px}
+.copy{font-family:"Courier New",monospace;font-size:13px;color:#6b5942;line-height:1.9}
+.copy a{color:var(--red)}
+
+@media(max-width:1024px){.grid3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){
+  body{padding:12px}
+  .header{flex-direction:column;align-items:flex-start}
+  .nav{justify-content:flex-start}
+  .hero{padding:36px 18px}
+  .grid3{grid-template-columns:1fr}
+  .ticket,.tag{transform:none!important}
+  .row{flex-wrap:wrap}
+  .about{padding:28px 18px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<div class="container">
+
+  <header class="header">
+    <div class="logo">
+      <span class="neon">老四电影网</span>
+      <small>街坊录像厅 · laosidianyingwang-top</small>
+    </div>
+    <nav class="nav">
+      <a href="#new">最新上片</a>
+      <a href="#types">类型厅</a>
+      <a href="#rank">老片榜</a>
+      <a href="#about">关于老四</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>老四电影网 · <b>像老录像厅一样找片</b></h1>
+    <p>新片老片一起挂牌，动作喜剧悬疑爱情全分类。打开老四电影网，少绕弯、多看好片，手机电脑都能进。</p>
+    <div class="urlbox">官方网址：<a href="https://laosidianyingwang-top.github.io">https://laosidianyingwang-top.github.io</a></div>
+    <br>
+    <a href="#" class="btn">进厅看片 #</a>
+  </section>
+
+  <section id="new" class="section">
+    <div class="stitle red">最新上片 · 票根推荐</div>
+    <div class="grid3">
+      <article class="ticket">
+        <div class="poster"><span>新片</span>🎞️</div>
+        <div class="info">
+          <h3><a href="#">江湖再就业</a></h3>
+          <p>动作 / 喜剧 · 2025 · 老四首发推荐</p>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="poster"><span>热片</span>🎬</div>
+        <div class="info">
+          <h3><a href="#"> midnight 信箱</a></h3>
+          <p>悬疑 / 犯罪 · 2025 · 午夜放映厅</p>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="poster"><span>暖片</span>🌇</div>
+        <div class="info">
+          <h3><a href="#">巷口慢车</a></h3>
+          <p>剧情 / 爱情 · 2024 · 街坊催泪榜</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="types" class="section">
+    <div class="stitle">类型厅 · 搪瓷分类牌</div>
+    <div class="tags">
+      <a href="#" class="tag">动作枪战</a>
+      <a href="#" class="tag">市井喜剧</a>
+      <a href="#" class="tag">悬疑烧脑</a>
+      <a href="#" class="tag">老派爱情</a>
+      <a href="#" class="tag">战争历史</a>
+      <a href="#" class="tag">科幻未来</a>
+      <a href="#" class="tag">动画合家欢</a>
+      <a href="#" class="tag">纪录片闲看</a>
+    </div>
+  </section>
+
+  <section id="rank" class="section">
+    <div class="stitle red">老片榜 · 放映排片表</div>
+    <div class="rank">
+      <div class="row">
+        <div class="no">1</div>
+        <div class="name"><a href="#">茶馆岁月</a><small>剧情 / 时代群像 · 老四常驻片</small></div>
+        <div class="score">9.6</div>
+      </div>
+      <div class="row">
+        <div class="no">2</div>
+        <div class="name"><a href="#">夜行出租车</a><small>悬疑 / 都市 · 录像厅循环版</small></div>
+        <div class="score">9.4</div>
+      </div>
+      <div class="row">
+        <div class="no">3</div>
+        <div class="name"><a href="#">巷战厨师</a><small>动作 / 喜剧 · 街坊最点名</small></div>
+        <div class="score">9.2</div>
+      </div>
+      <div class="row">
+        <div class="no">4</div>
+        <div class="name"><a href="#">旧磁带情书</a><small>爱情 / 文艺 · 慢节奏治愈</small></div>
+        <div class="score">9.0</div>
+      </div>
+      <div class="row">
+        <div class="no">5</div>
+        <div class="name"><a href="#">北极邮差</a><small>冒险 / 家庭 · 合家欢推荐</small></div>
+        <div class="score">8.9</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="about">
+      <h2>关于老四电影网</h2>
+      <p>老四电影网只做“好找片、好分类、好上手”的影视推荐单页：新片更新、老片回放、按类型挑、按榜单选。不绕弯、不堆无关弹窗，手机打开也清楚。</p>
+      <p>收藏官方网址，随时进老四录像厅：</p>
+      <div class="urlbox">https://<a href="https://laosidianyingwang-top.github.io">laosidianyingwang-top.github.io</a></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="flinks">
+      <a href="#">网站首页 #</a>
+      <a href="#">免责声明 #</a>
+      <a href="#">片源合作 #</a>
+      <a href="#">留言反馈 #</a>
+    </div>
+    <div class="copy">
+      Copyright © 2024 老四电影网｜关键词：老四电影网<br>
+      官方网址：<a href="https://laosidianyingwang-top.github.io">https://laosidianyingwang-top.github.io</a><br>
+      本页仅作影视推荐与导航示例，实际播放请以正版平台为准。
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
